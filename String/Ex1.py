@@ -29,3 +29,15 @@ else:
 input_str1= input("Enter the string.")
 new_str = input_str1.replace(input_str1[0], '$')
 print(input_str1[0]+new_str[1:])
+
+
+# Write a Python program to get a single string from two given strings, separated by a space and swap the first two characters of each string.
+# Sample String : 'abc', 'xyz'
+# Expected Result : 'xyc abz'
+def change_str(str1, str2):
+    changedstr1 = str2[:2]+ str1[2]
+    changedstr2 = str1[:2] + str2[2]
+    print(changedstr1 + ' ' + changedstr2) 
+change_str('abc', 'xyz')
+
+ 
