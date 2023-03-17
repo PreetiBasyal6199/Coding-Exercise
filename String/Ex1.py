@@ -40,4 +40,19 @@ def change_str(str1, str2):
     print(changedstr1 + ' ' + changedstr2) 
 change_str('abc', 'xyz')
 
+#Write a Python program to add 'ing' at the end of a given string (length should be at least 3). If the given string already ends with 'ing', add 'ly' instead. If the string length of the given string is less than 3, leave it unchanged.
+# Sample String : 'abc'           Expected Result : 'abcing'
+# Sample String : 'string'          Expected Result : 'stringly'
+
+def add_ing(str1):
+    if len(str1)>=3:
+        if str1[-3:]=="ing":
+            str1+= 'ly'
+        else:
+            str1+='ing'
+    return str1
+
+print(add_ing("Diying"))
+
+
  
